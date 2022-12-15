@@ -219,9 +219,57 @@
           </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,32L21.8,64C43.6,96,87,160,131,165.3C174.5,171,218,117,262,96C305.5,75,349,85,393,90.7C436.4,96,480,96,524,112C567.3,128,611,160,655,149.3C698.2,139,742,85,785,96C829.1,107,873,181,916,218.7C960,256,1004,256,1047,224C1090.9,192,1135,128,1178,112C1221.8,96,1265,128,1309,128C1352.7,128,1396,96,1418,80L1440,64L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- Last Gallery -->
 
+    <!-- First Keyboard -->
+    <section id="myKeyboard">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Keyboard</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboard-box">
+              <h3 class="keyboard-name">Red Dragon</h3>
+              <img src="/img/keyboard/1.png" alt="Keyboard 1" class="keyboard-img" />
+              <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboard-box">
+              <h3 class="keyboard-name">Apple Magic</h3>
+              <img src="/img/keyboard/2.png" alt="Keyboard 2" class="keyboard-img" />
+              <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboard-box">
+              <h3 class="keyboard-name">logitech Mechanical</h3>
+              <img src="/img/keyboard/3.png" alt="Keyboard 3" class="keyboard-img" />
+              <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,288L21.8,266.7C43.6,245,87,203,131,170.7C174.5,139,218,117,262,112C305.5,107,349,117,393,112C436.4,107,480,85,524,106.7C567.3,128,611,192,655,213.3C698.2,235,742,213,785,218.7C829.1,224,873,256,916,234.7C960,213,1004,139,1047,117.3C1090.9,96,1135,128,1178,138.7C1221.8,149,1265,139,1309,112C1352.7,85,1396,43,1418,21.3L1440,0L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Last Keyboard -->
     <!-- First Contact -->
     <section id="contact">
       <div class="container">
@@ -348,6 +396,22 @@
         ease: "back",
       });
     </script>
+
+    <!-- Vanila Tilt Js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+      integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 35,
+        speed: 1000,
+        glare: true,
+      });
+    </script>
+
     <!-- Script -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"
@@ -399,7 +463,5 @@
         });
       });
     </script>
-
-    <script></script>
   </body>
 </html>
